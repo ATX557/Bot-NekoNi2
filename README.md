@@ -20,3 +20,4 @@ Notes:
 - Keep your bot token secret. Never commit `.env` to git.
 - The bot requires intents: Message Content & Members if you want user join/welcome and message-based commands to work. Make sure to enable them in the Discord Developer Portal.
 ```
+free
