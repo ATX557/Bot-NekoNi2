@@ -1,23 +1,22 @@
-# NekoNi2 [BETA]
+# NekoNi2 - Discord Bot
 
-NekoNi2 is a Discord bot currently in BETA, with the main code written in Python.  
-The bot is designed to be simple to use, and most commands are accessed by prefixing them with a comma: ```,` ``.  
-For example, you can type `,help` or `,command` to interact with the bot.
+This repository contains a featureful Discord bot (app.py) with moderation, utility, and fun commands.
 
-## How the Bot Works
+Quick start:
+1. Create a virtual env: python -m venv venv
+2. Activate it: (Windows) venv\Scripts\activate | (macOS/Linux) source venv/bin/activate
+3. Install requirements: pip install -r requirements.txt
+4. Copy `.env.example` to `.env` and set DISCORD_TOKEN to your bot token.
+5. Run: python app.py
 
-- **Command Prefix:** All commands start with a comma (`,`), for example: `,ping`, `,info`, or `,help`.
-- **Functionality:** NekoNi2 responds to user messages containing the command prefix, performing actions or providing information based on the command.
-- **Design Focus:** The bot aims for simplicity and ease-of-use for server members.
-- **Current Status:** The bot is still in BETA and new features or improvements are ongoing.
+Features:
+- ping, say, avatar, serverinfo, userinfo
+- Moderation: clear, kick, ban, unban, addrole, removerole
+- Fun: 8ball, coin, roll
+- Welcome message (to channel name in WELCOME_CHANNEL)
+- Safe token-loading via environment variables / .env
 
-## Adding NekoNi2 to your Server
-
-To add NekoNi2 to your Discord server:
-
-1. Click on the bot invitation link below or copy it into your browser.
-2. Select the server you want to add NekoNi2 to.
-3. Authorize the permissions requested by the bot.
-4. The bot should now appear in your member list and be ready to use with the comma (`,`) prefix.
-
-[Bot invitation](https://discord.com/oauth2/authorize?client_id=1444680239564324924&permissions=8&integration_type=0&scope=bot)
+Notes:
+- Keep your bot token secret. Never commit `.env` to git.
+- The bot requires intents: Message Content & Members if you want user join/welcome and message-based commands to work. Make sure to enable them in the Discord Developer Portal.
+```
