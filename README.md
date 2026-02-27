@@ -1,5 +1,7 @@
 # [AVK.gg](https://discord.com/oauth2/authorize?client_id=1449812433932914970&permissions=8&scope=bot%20applications.commands)
 
+> Please remember, you can use this archive or these coaches, but don't forget to give me the clinic, and yes, this code is still in the Beta. 
+
 This repository contains a featureful Discord bot (app.py) with moderation, utility, and fun commands.
 
 Quick start:
@@ -9,15 +11,12 @@ Quick start:
 4. Please include your bot token and user ID, along with the prefix command. Please go to `config.json`
 5. Run: python app.py
 
-Features:
-- ping, say, avatar, serverinfo, userinfo
-- Moderation: clear, kick, ban, unban, addrole, removerole
-- Fun: 8ball, coin, roll
-- Welcome message (to channel name in WELCOME_CHANNEL)
-- Safe token-loading via environment variables / .env
+
 
 Notes:
 - Keep your bot token secret. Never commit `config.json` to git.
-- The bot requires intents: Message Content & Members if you want user join/welcome and message-based commands to work. Make sure to enable them in the Discord Developer Portal.
-```
-free
+
+
+Contact channels:
+[My Server](https://discord.gg/2dyzbCfdsz)
+or You can DM me. 
